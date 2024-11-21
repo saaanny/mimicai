@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Apply Background Image */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('test.jpg'); /* Example background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main Quiz Container */
+.quiz-container, #greeting-container {
+    background-color: white;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Greeting Section */
+#greeting-container {
+    display: none; /* Initially hidden */
+    padding: 40px; /* Padding for the greeting section */
+    background-color: rgb(180, 176, 176);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Adjust the congrats message with extra padding */
+#greeting-container p {
+    font-size: 1.2rem;
+    color: #0c0c0c;
+    margin-bottom: 15px; /* Space between lines */
+    line-height: 1.6;
+}
+
+/* For final score text */
+#final-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f75;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Ensure image scaling */
+#greeting-container img {
+    margin-top: 20px;
+    width: 50%; /* Make sure the image scales well */
+    border-radius: 10px;
+}
+
+/* Blinking Effect for Instructions */
+.instruction-text {
+    font-size: 1.2rem;
+    color: #FF5733;  /* Orange text color */
+    text-align: center;
+    font-weight: bold;
+    animation: blink-animation 3s infinite step-start;
+}
+
+/* Keyframes for Blinking Effect */
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Container */
+.quiz-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Other styling remains the same */
+.quiz-title {
+    font-size: 2.5rem;
+    color: #F7B731;
+    padding-bottom: 20px;
+}
+
+.quiz-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.option {
+    background-color: #F7B731;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #FF9F00;
+}
+
+#result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.score-container {
+    margin-top: 20px;
+}
+
+#next-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #45a049;
+}
+
+#restart-button {
+    background-color: #FF5733;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+#restart-button:hover {
+    background-color: #e84e33;
+}
+
+/* Styles for the Jumbled Words Question (Question 7) */
+#question-container7 {
+    margin-top: 20px;
+}
+
+#question7 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.clue {
+    font-size: 1.1rem;
+    color: #FF9F00;
+    margin-bottom: 20px;
+}
+
+#answer7 {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #FF9F00;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+#feedback7 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF5733;
+    margin-top: 10px;
+}
+
+/* Style the "Try Again" button */
+#retry-button {
+    background-color: #FF5733;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#retry-button:hover {
+    background-color: #e84e33;
+}
