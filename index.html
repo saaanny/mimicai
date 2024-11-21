@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn About Essential Baking Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main quiz container -->
+    <div class="quiz-container" id="quiz-container">
+      <!-- Quiz Title and Instructions -->
+      <h1 class="quiz-title" id="quiz-title">
+        Learn about essential baking tools and how to use them!
+      </h1>
+      <p class="instruction-text" id="instruction-text">
+        Instruction: Identify the true statement about each baking tool based on
+        the clues provided.
+      </p>
+      <p class="quiz-description" id="quiz-description">
+        Test your knowledge about essential baking tools and how to use them!
+      </p>
+
+      <!-- Question 1 (Mixing Bowls) -->
+      <div class="question-container" id="question-container1">
+        <h2 id="question1">1. Mixing Bowls</h2>
+        <div id="options1">
+          <button class="option" onclick="selectAnswer('A')">
+            A. Mixing bowls are only used for stirring dry ingredients together.
+          </button>
+          <button class="option" onclick="selectAnswer('B')">
+            B. Mixing bowls are used to prepare different ingredients separately
+            before combining them.
+          </button>
+          <button class="option" onclick="selectAnswer('C')">
+            C. Mixing bowls should be used only for baking, not for other
+            cooking tasks.
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 2 (Measuring Cups & Spoons) -->
+      <div
+        class="question-container"
+        id="question-container2"
+        style="display: none"
+      >
+        <h2 id="question2">2. Measuring Cups & Spoons</h2>
+        <div id="options2">
+          <button class="option" onclick="selectAnswer2('A')">
+            A. Measuring spoons are used to measure large quantities of dry
+            ingredients like flour.
+          </button>
+          <button class="option" onclick="selectAnswer2('B')">
+            B. Liquid measuring cups are perfect for measuring dry ingredients
+            like sugar or flour.
+          </button>
+          <button class="option" onclick="selectAnswer2('C')">
+            C. Measuring cups and spoons help ensure accurate ingredient
+            measurements for consistent results.
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 3 (Whisk) -->
+      <div
+        class="question-container"
+        id="question-container3"
+        style="display: none"
+      >
+        <h2 id="question3">3. Whisk</h2>
+        <div id="options3">
+          <button class="option" onclick="selectAnswer3('A')">
+            A. Whisk is useful for blending dry ingredients like flour and
+            sugar.
+          </button>
+          <button class="option" onclick="selectAnswer3('B')">
+            B. A Whisk is primarily used for incorporating air into batters and
+            mixtures.
+          </button>
+          <button class="option" onclick="selectAnswer3('C')">
+            C. A whisk is designed only for stirring sauces and soups.
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 4 (Spatula) -->
+      <div
+        class="question-container"
+        id="question-container4"
+        style="display: none"
+      >
+        <h2 id="question4">4. Spatula</h2>
+        <div id="options4">
+          <button class="option" onclick="selectAnswer4('A')">
+            <img src="2.jpg" alt="" style="width: 80px; height: auto" /> A.
+          </button>
+          <button class="option" onclick="selectAnswer4('B')">
+            <img src="1.jpg" alt="" style="width: 80px; height: auto" /> B.
+          </button>
+          <button class="option" onclick="selectAnswer4('C')">
+            <img src="3.jpg" alt="" style="width: 80px; height: auto" /> C.
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 5 (Rolling Pin) -->
+      <div
+        class="question-container"
+        id="question-container5"
+        style="display: none"
+      >
+        <h2 id="question5">5. Rolling Pin</h2>
+        <div id="options5">
+          <button class="option" onclick="selectAnswer5('A')">
+            <img src="5.jpg" alt="" style="width: 80px; height: auto" /> A.
+          </button>
+          <button class="option" onclick="selectAnswer5('B')">
+            <img src="6.jpg" alt="" style="width: 80px; height: auto" /> B.
+          </button>
+          <button class="option" onclick="selectAnswer5('C')">
+            <img src="7.jpg" alt="" style="width: 80px; height: auto" /> C.
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 6 (Round Pan) -->
+      <div
+        class="question-container"
+        id="question-container6"
+        style="display: none"
+      >
+        <h2 id="question6">6. Round Pan</h2>
+        <div id="options6">
+          <button class="option" onclick="selectAnswer6('A')">
+            <img src="8.jpg" alt="" style="width: 80px; height: auto" /> A.
+          </button>
+          <button class="option" onclick="selectAnswer6('B')">
+            <img src="9.jpg" alt="" style="width: 80px; height: auto" /> B.
+          </button>
+          <button class="option" onclick="selectAnswer6('C')">
+            <img src="10.jpg" alt="" style="width: 80px; height: auto" /> C.
+          </button>
+        </div>
+      </div>
+
+      <!-- True/False Questions (7 to 10) -->
+      <div
+        id="question-container7"
+        class="question-container"
+        style="display: none"
+      >
+        <p>
+          Electric mixers are only suitable for large batches, while stand
+          mixers are compact and ideal for whipping cream.
+        </p>
+        <button onclick="selectAnswer7('True')">True</button>
+        <button onclick="selectAnswer7('False')">False</button>
+      </div>
+
+      <div
+        id="question-container8"
+        class="question-container"
+        style="display: none"
+      >
+        <p>
+          Cooling racks are used for cooling baked goods to prevent sogginess
+          and maintain texture.
+        </p>
+        <button onclick="selectAnswer8('True')">True</button>
+        <button onclick="selectAnswer8('False')">False</button>
+      </div>
+
+      <div
+        id="question-container9"
+        class="question-container"
+        style="display: none"
+      >
+        <p>
+          A pastry brush is used to apply glazes, butter, and oils to baked
+          goods.
+        </p>
+        <button onclick="selectAnswer9('True')">True</button>
+        <button onclick="selectAnswer9('False')">False</button>
+      </div>
+
+      <div
+        id="question-container10"
+        class="question-container"
+        style="display: none"
+      >
+        <p>
+          Silicone baking mats are not useful for non-stick baking and cleanup.
+        </p>
+        <button onclick="selectAnswer10('True')">True</button>
+        <button onclick="selectAnswer10('False')">False</button>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result"></div>
+
+      <!-- Score and Navigation Buttons -->
+      <div class="score-container">
+        <p id="score">Score: 0</p>
+        <button id="next-button" onclick="nextQuestion()" style="display: none">
+          Next Question
+        </button>
+        <button
+          id="retry-button"
+          onclick="retryQuestion()"
+          style="display: none"
+        >
+          Try Again
+        </button>
+      </div>
+    </div>
+
+    <!-- Greeting Section -->
+    <div id="greeting-container" style="display: none">
+      <h2>Congratulations!</h2>
+      <p>You've completed the quiz!</p>
+      <p id="final-score"></p>
+      <img src="test1.jpg" alt="Congratulations" />
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
